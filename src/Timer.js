@@ -1,9 +1,8 @@
 import {observable, computed, action} from 'mobx';
 import {v4} from 'node-uuid';
-import moment from 'moment';
 import format from 'format-number-with-string';
 
-export class Timer {
+export default class Timer {
   @observable milliseconds;
   @observable savedMilliseconds;
 
